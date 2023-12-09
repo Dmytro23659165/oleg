@@ -8,7 +8,7 @@ $hew-color: #2F303A;
 
 @mixin size($width, $height){
     width: $width;
-    height: $heidht;
+    height: $height;
 }
 @mixin center($flex, $center){
     display: $flex;
@@ -107,9 +107,10 @@ ul{
 }
 /*Main*/
 .services {
+    width: 1600px;
     height: 600px;
     margin: 0;
-    background-image: url("../image/img/section1/background_one.png");
+    background-image: url("../src/image/img/Img.png");
     background-repeat: no-repeat;
     background-size: cover;
     @include center($flex: flex, $center: center);
@@ -399,8 +400,48 @@ ul{
     gap: 10px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1080px){
+    .header-console__logo-link{
+        width: 6px;
+        height: 2px;
+    }
+    .header-console__section{
+        gap: 5px;
+    }
+    .header-console__menu{
+        gap: 2px;
+    }
+    .header-console__content-box{ 
+        gap: 15px;
+    }
+    .header-console__information{
+        gap: 2px;
+    }
     .header-console__option-link{
-        color: green;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .header-console__info{
+        font-size: 10px;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .services__content-box{
+        width: 340px;
+    }
+    .services__title{
+        width: 340px;
+        font-size: 25px;
+    }
+    .services__button{
+
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .achievement__element{
+        
     }
 }
