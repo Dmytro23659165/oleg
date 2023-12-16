@@ -172,8 +172,8 @@ ul {
 
 .achievement__content-box {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 80px;
 }
 
 .achievement__element {
@@ -225,7 +225,7 @@ ul {
 
 .achievement__element-paragraf {
   color: #757575;
-  text-align: center;
+  text-align: left;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -287,8 +287,7 @@ ul {
 
 .team__content-box {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
@@ -312,6 +311,7 @@ ul {
 }
 
 .team__info-element {
+  margin-top: 30px;
   box-sizing: content-box;
   width: 270px;
   flex-shrink: 0;
@@ -407,7 +407,7 @@ ul {
 
 .user__company-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -415,8 +415,8 @@ ul {
 /* END Company */
 /* Footer box   */
 .footer-info {
-  height: 252px;
-  margin: 0;
+  height: 160px;
+  margin-top: 60px;
   background: #2F303A;
   display: flex;
   justify-content: center;
@@ -512,38 +512,196 @@ ul {
   gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  .header-console__logo-link {
-    min-width: 6px;
-    min-height: 2px;
-  }
-  .header-console__section {
-    gap: 5px;
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1024px;
   }
   .header-console__menu {
-    gap: 2px;
-  }
-  .header-console__content-box {
-    gap: 15px;
-  }
-  .header-console__information {
-    gap: 2px;
+    gap: 20px;
   }
   .header-console__option-link {
     font-size: 10px;
-    gap: 0px;
+  }
+  .header-console__content-box {
+    gap: 50px;
+  }
+  .header-console__information {
+    gap: 20px;
   }
   .header-console__info {
     font-size: 10px;
-    gap: 0px;
   }
-}
-@media screen and (max-width: 1000px) {
-  .services {
-    min-width: 340px;
+  .services__content-box {
+    width: 1200px;
   }
   .services__title {
-    width: 320px;
-    font-size: 25px;
+    font-size: 28px;
+    width: 500px;
+  }
+  .achievement__content-box {
+    gap: 40px;
+  }
+  .achievement__element::before {
+    width: 180px;
+    height: 80px;
+  }
+  .achievement__element-title {
+    font-size: 10px;
+  }
+  .achievement__element-paragraf {
+    font-size: 10px;
+    font-family: none;
+    line-height: 10px;
+  }
+  .work__title {
+    font-size: 26px;
+  }
+  .work__image-box {
+    gap: 20px;
+  }
+  .work__image {
+    width: 220px;
+    height: 160px;
+  }
+  .team__title {
+    font-size: 26px;
+  }
+  .team__info-element {
+    width: 200px;
+  }
+  .team__image {
+    width: 200px;
+    height: 190px;
+  }
+  .team__name {
+    font-size: 12px;
+  }
+  .team__paragraf {
+    font-size: 12px;
+  }
+  .team__social-networks-box {
+    gap: 2px;
+  }
+  .user__title {
+    font-size: 26px;
+  }
+  .user__company-box {
+    gap: 18px;
+  }
+  .icon-logo-company1 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company2 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company3 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company4 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company5 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company6 {
+    width: 100px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 592px;
+  }
+  .achievement__content-box {
+    gap: 40px;
+  }
+  .achievement__element::before {
+    width: 180px;
+    height: 80px;
+  }
+  .achievement__element-title {
+    font-size: 10px;
+  }
+  .achievement__element-paragraf {
+    font-size: 10px;
+    font-family: none;
+    line-height: 10px;
+  }
+  .work__title {
+    font-size: 18px;
+  }
+  .work__image-box {
+    gap: 20px;
+  }
+  .work__image {
+    width: 140px;
+    height: 100px;
+  }
+  .team__title {
+    font-size: 18px;
+  }
+  .team__info-element {
+    width: 200px;
+  }
+  .team__image {
+    width: 200px;
+    height: 190px;
+  }
+  .team__name {
+    font-size: 12px;
+  }
+  .team__paragraf {
+    font-size: 12px;
+  }
+  .team__social-networks-box {
+    gap: 2px;
+  }
+  .user__content-box {
+    margin-top: 120px;
+  }
+  .user__title {
+    font-size: 18px;
+  }
+  .user__company-box {
+    gap: 10px;
+    margin-left: 79px;
+  }
+  .icon-logo-company1 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company2 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company3 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company4 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company5 {
+    width: 100px;
+    height: 42px;
+  }
+  .icon-logo-company6 {
+    width: 100px;
+    height: 42px;
+  }
+  .footer-info__adress {
+    font-size: 9px;
+  }
+  .footer-info__link-contact {
+    font-size: 9px;
+  }
+  .footer-info__title-subscribe {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

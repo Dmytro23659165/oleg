@@ -107,7 +107,6 @@ ul{
 }
 /*Main*/
 .services {
-    width: 1600px;
     height: 600px;
     margin: 0;
     background-image: url("../src/image/img/Img.png");
@@ -154,8 +153,8 @@ ul{
     padding: 94px 0px 94px 0px;
 }
 .achievement__content-box {
-    @include center($flex: flex, $center: space-between);
-    gap: 30px;
+    @include center($flex: flex, $center: center);
+    gap: 80px;
 }
 .achievement__element {
     display: flex;
@@ -195,7 +194,7 @@ ul{
 }
 .achievement__element-paragraf {
     color: $colour-color;
-    @include prosto($aligh: center, $family: Roboto, 
+    @include prosto($aligh: left, $family: Roboto, 
     $size: 14px, $style: normal, 
     $weight: 500, $line-height: 24px, 
     $letter-spacing: 0.42px);
@@ -238,8 +237,8 @@ ul{
     align-items: center;
 }
 .team__content-box {
-    @include center($flex: flex, $center: center);
-    flex-direction: column;
+    @include center($flex: flex, $center: space-between);
+    // flex-direction: column;
     align-items: center;
     gap: 50px;
 }
@@ -256,6 +255,7 @@ ul{
     gap: 30px;
 }
 .team__info-element {
+    margin-top: 30px;
     box-sizing: content-box;
     width: 270px;
     flex-shrink: 0;
@@ -324,15 +324,15 @@ ul{
     $letter-spacing: 1.08px);
 }
 .user__company-box {
-    @include center($flex: flex, $center: space-between);
+    @include center($flex: flex, $center: center);
     align-items: center;
     gap: 30px;
 }
 /* END Company */
 /* Footer box   */
 .footer-info {
-    height: 252px;
-    margin: 0;
+    height: 160px;
+    margin-top: 60px;
     background: $hew-color;
     @include center($flex: flex, $center: center);
     align-items: center;
@@ -400,48 +400,271 @@ ul{
     gap: 10px;
 }
 
-@media screen and (max-width: 1080px){
-    .header-console__logo-link{
-        width: 6px;
-        height: 2px;
+@media screen and (max-width: 1200px){
+    .container{
+        width: 1024px;
     }
-    .header-console__section{
-        gap: 5px;
+    .header-console__logo{
+
     }
     .header-console__menu{
-        gap: 2px;
-    }
-    .header-console__content-box{ 
-        gap: 15px;
-    }
-    .header-console__information{
-        gap: 2px;
+        gap: 20px;
     }
     .header-console__option-link{
         font-size: 10px;
-        gap: 0px;
+    }
+    .header-console__content-box{
+        gap: 50px;
+    }
+    .header-console__information{
+        gap: 20px;
     }
     .header-console__info{
         font-size: 10px;
-        gap: 0px;
     }
-}
 
-@media screen and (max-width: 1080px){
+
+
+    
     .services__content-box{
-        width: 340px;
+        width: 1200px;
     }
     .services__title{
-        width: 340px;
-        font-size: 25px;
+        font-size: 28px;
+        width: 500px;
     }
-    .services__button{
+    .services__button-box{
+        // width: 108px;
+        // height: 25px;
+        // font-size: 11px;
+    }
 
+
+
+
+    .achievement__content-box{
+        gap: 40px;
+    }
+    // .achievement__element{
+    //     width: 180px;
+    //     height: 80px;
+    // }
+    .achievement__element::before{
+        width: 180px;
+        height: 80px;
+    }
+    .achievement__element-title{
+        font-size: 10px;
+    }
+    .achievement__element-paragraf{
+        font-size: 10px;
+        font-family: none;
+        line-height: 10px;
+    }
+
+
+
+    .work__content-box{
+
+    }
+    .work__title{
+        font-size: 26px;
+    }
+    .work__image-box{
+        gap: 20px;
+    }
+    .work__image{
+        width: 220px;
+        height: 160px;
+    }
+
+
+
+    .team__title{
+        font-size: 26px;
+    }
+    .team__info-box{
+        
+    }
+    .team__info-element{
+        width: 200px;
+    }
+    .team__image{
+        width: 200px;
+        height: 190px;
+    }
+    .team__info-container{
+
+    }
+    .team__text-box{
+
+    }
+    .team__name{
+        font-size: 12px;
+    }
+    .team__paragraf{
+        font-size: 12px;
+    }
+    .team__social-networks-box{
+        gap: 2px;
+    }
+
+
+
+    .user__content-box{
+
+    }
+    .user__title{
+        font-size: 26px;
+    }
+    .user__company-box{
+        gap: 18px;
+    }
+    .icon-logo-company1{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company2{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company3{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company4{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company5{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company6{
+        width: 100px;
+        height: 42px;
     }
 }
 
-@media screen and (max-width: 1080px){
-    .achievement__element{
-        
+@media screen and (max-width: 768px){
+    .container{ 
+        width: 592px;
+    }
+
+
+
+    .achievement__content-box{
+        gap: 40px;
+    }
+    .achievement__dodatok{
+
+    }
+    .achievement__element::before{
+        width: 180px;
+        height: 80px;
+    }
+    .achievement__element-title{
+        font-size: 10px;
+    }
+    .achievement__element-paragraf{
+        font-size: 10px;
+        font-family: none;
+        line-height: 10px;
+    }
+
+
+
+    .work__content-box{
+
+    }
+    .work__title{
+        font-size: 18px;
+    }
+    .work__image-box{
+        gap: 20px;
+    }
+    .work__image{
+        width: 140px;
+        height: 100px;
+    }
+
+
+
+    .team__title{
+        font-size: 18px;
+    }
+    .team__info-box{
+
+    }
+    .team__info-element{
+        width: 200px;
+    }
+    .team__image{
+        width: 200px;
+        height: 190px;
+    }
+    .team__info-container{
+
+    }
+    .team__text-box{
+
+    }
+    .team__name{
+        font-size: 12px;
+    }
+    .team__paragraf{
+        font-size: 12px;
+    }
+    .team__social-networks-box{
+        gap: 2px;
+    }
+
+
+
+    .user__content-box{
+        margin-top: 120px;
+    }
+    .user__title{
+        font-size: 18px;
+    }
+    .user__company-box{
+        gap: 10px;
+        margin-left: 79px;
+    }
+    .icon-logo-company1{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company2{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company3{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company4{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company5{
+        width: 100px;
+        height: 42px;
+    }
+    .icon-logo-company6{
+        width: 100px;
+        height: 42px;
+    }
+
+
+
+    .footer-info__adress{
+        font-size: 9px;
+    }
+    .footer-info__link-contact{
+        font-size: 9px;
+    }
+    .footer-info__title-subscribe{
+        font-size: 10px;
     }
 }
