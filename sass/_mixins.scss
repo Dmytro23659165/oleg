@@ -154,7 +154,13 @@ ul{
 }
 .achievement__content-box {
     @include center($flex: flex, $center: center);
-    gap: 80px;
+    gap: 30px;
+}
+.achievement__dodatok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .achievement__element {
     display: flex;
@@ -230,27 +236,35 @@ ul{
 }
 /* Main box 3 */
 .team {
-    height: 708px;
-    margin: 0;
+    padding: 94px 0;
     background: $mud-color;
-    @include center($flex: flex, $center: center);
-    align-items: center;
 }
 .team__content-box {
     @include center($flex: flex, $center: space-between);
-    // flex-direction: column;
+    flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 .team__title {
     color: $muder-color;
-    @include prosto($aligh: center, $family: Roboto, 
-    $size: 36px, $style: normal, 
-    $weight: 700, $line-height: normal, 
-    $letter-spacing: 1.08px);
+    @include prosto(
+    $aligh: center,
+    $family: Roboto,
+    $size: 36px,
+    $style: normal,
+    $weight: 700,
+    $line-height: normal,
+    $letter-spacing: 1.08px
+ );
 }
 .team__info-box {
     @include center($flex: flex, $center: space-between);
+    align-items: center;
+    gap: 30px;
+}
+.team__dodatok{
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -266,7 +280,8 @@ ul{
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     background: $text-color;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team__image {
     @include size($width: 270px, $height: 260px);
@@ -325,6 +340,12 @@ ul{
 }
 .user__company-box {
     @include center($flex: flex, $center: center);
+    align-items: center;
+    gap: 30px;
+}
+.user__dodatok{ 
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -408,19 +429,19 @@ ul{
 
     }
     .header-console__menu{
-        gap: 20px;
+        gap: 30px;
     }
     .header-console__option-link{
-        font-size: 10px;
+        font-size: 14px;
     }
     .header-console__content-box{
-        gap: 50px;
+        gap: 60px;
     }
     .header-console__information{
-        gap: 20px;
+        gap: 30px;
     }
     .header-console__info{
-        font-size: 10px;
+        font-size: 14px;
     }
 
 
@@ -434,30 +455,27 @@ ul{
         width: 500px;
     }
     .services__button-box{
-        // width: 108px;
-        // height: 25px;
-        // font-size: 11px;
+        
     }
 
 
 
 
     .achievement__content-box{
-        gap: 40px;
+        gap: 20px;
     }
-    // .achievement__element{
-    //     width: 180px;
-    //     height: 80px;
-    // }
+    .achievement__dodatok{
+        
+    }
     .achievement__element::before{
-        width: 180px;
-        height: 80px;
+        width: 200px;
+        height: 100px;
     }
     .achievement__element-title{
-        font-size: 10px;
+        font-size: 14px;
     }
     .achievement__element-paragraf{
-        font-size: 10px;
+        font-size: 13px;
         font-family: none;
         line-height: 10px;
     }
@@ -471,11 +489,11 @@ ul{
         font-size: 26px;
     }
     .work__image-box{
-        gap: 20px;
+        gap: 30px;
     }
     .work__image{
-        width: 220px;
-        height: 160px;
+        width: 300px;
+        height: 210px;
     }
 
 
@@ -485,6 +503,12 @@ ul{
     }
     .team__info-box{
         
+    }
+    .achievement__dodatok{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
     .team__info-element{
         width: 200px;
@@ -518,7 +542,10 @@ ul{
         font-size: 26px;
     }
     .user__company-box{
-        gap: 18px;
+        gap: 20px;
+    }
+    .user__dodatok{
+        gap: 20px;
     }
     .icon-logo-company1{
         width: 100px;
@@ -553,49 +580,80 @@ ul{
 
 
 
+
+    .header-console__logo{
+        width: 120px;
+        height: 60px;
+    }
+    .header-console__option{
+        gap: 20px;
+    }
+    .header-console__option-link{
+        font-size: 11px;
+    }
+    .header-console__info-box{
+        gap: 20px;
+    }
+    .header-console__info{
+        font-size: 11px;
+    }
+
+    
+    
+    
     .achievement__content-box{
         gap: 40px;
     }
     .achievement__dodatok{
-
+        display: flex;
+        flex-direction: column;
     }
     .achievement__element::before{
-        width: 180px;
-        height: 80px;
+        width: 200px;
+        height: 100px;
     }
     .achievement__element-title{
-        font-size: 10px;
+        font-size: 14px;
     }
     .achievement__element-paragraf{
-        font-size: 10px;
+        font-size: 13px;
         font-family: none;
         line-height: 10px;
     }
-
 
 
     .work__content-box{
 
     }
     .work__title{
-        font-size: 18px;
+        font-size: 20px;
     }
     .work__image-box{
-        gap: 20px;
+        gap: 40px;
     }
     .work__image{
-        width: 140px;
-        height: 100px;
+        width: 200px;
+        height: 140px;
     }
 
 
-
+    .team__content-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .team__title{
         font-size: 18px;
     }
     .team__info-box{
 
     }
+    .team__dodatok{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .team__info-element{
         width: 200px;
     }
