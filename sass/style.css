@@ -433,9 +433,8 @@ ul {
 /* END Company */
 /* Footer box   */
 .footer-info {
-  height: 160px;
-  margin-top: 60px;
   background: #2F303A;
+  padding: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,8 +529,63 @@ ul {
   gap: 10px;
 }
 
+.footer__sun {
+  display: flex;
+}
+
+.footer-in__indoo {
+  display: flex;
+  justify-content: center;
+  gap: 165px;
+}
+
+.footer-info__nazva {
+  align-items: center;
+}
+
+.footer-info__nazva-link {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+.footer-info__text-input {
+  background-color: #2F303A;
+  padding: 20px;
+}
+
+input {
+  padding: 10px 120px;
+  border-radius: 5px;
+  background-color: #2F303A;
+}
+
+.footer-info__button-link {
+  background-color: rgb(33, 150, 243);
+  padding: 10px 50px;
+  border: 0.1px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
-  .container {
+  .conteiner {
     width: 1024px;
   }
   .header-console__menu {
@@ -549,12 +603,12 @@ ul {
   .header-console__info {
     font-size: 14px;
   }
-  .services__content-box {
-    width: 1200px;
-  }
   .services__title {
     font-size: 28px;
-    width: 500px;
+  }
+  .services__button-box {
+    padding: 60px 40px;
+    font-size: 16px;
   }
   .achievement__content-box {
     gap: 20px;
@@ -606,59 +660,50 @@ ul {
   .team__social-networks-box {
     gap: 2px;
   }
+  .user__content-box {
+    padding: 94px 0;
+  }
   .user__title {
-    font-size: 26px;
+    font-size: 20px;
   }
   .user__company-box {
-    gap: 20px;
+    flex-direction: column;
   }
   .user__dodatok {
     gap: 20px;
   }
-  .icon-logo-company1 {
-    width: 100px;
-    height: 42px;
-  }
-  .icon-logo-company2 {
-    width: 100px;
-    height: 42px;
-  }
-  .icon-logo-company3 {
-    width: 100px;
-    height: 42px;
-  }
-  .icon-logo-company4 {
-    width: 100px;
-    height: 42px;
-  }
-  .icon-logo-company5 {
-    width: 100px;
-    height: 42px;
-  }
-  .icon-logo-company6 {
-    width: 100px;
-    height: 42px;
+  .icon-logo-company1:before,
+  .icon-logo-company2:before,
+  .icon-logo-company3:before,
+  .icon-logo-company4:before,
+  .icon-logo-company5:before,
+  .icon-logo-company6:before {
+    font-size: 110px;
   }
 }
 @media screen and (max-width: 768px) {
-  .container {
+  .conteiner {
     width: 592px;
   }
   .header-console__logo {
     width: 120px;
     height: 60px;
   }
-  .header-console__option {
+  .header-console__menu {
     gap: 20px;
   }
   .header-console__option-link {
     font-size: 11px;
   }
-  .header-console__info-box {
+  .header-console__information {
     gap: 20px;
   }
   .header-console__info {
     font-size: 11px;
+  }
+  .services__button {
+    padding: 15px 40px;
+    font-size: 13px;
   }
   .achievement__content-box {
     gap: 40px;
@@ -695,7 +740,7 @@ ul {
     align-items: center;
   }
   .team__title {
-    font-size: 18px;
+    font-size: 20px;
   }
   .team__dodatok {
     display: flex;
@@ -718,15 +763,11 @@ ul {
   .team__social-networks-box {
     gap: 2px;
   }
-  .user__content-box {
-    margin-top: 120px;
-  }
   .user__title {
     font-size: 18px;
   }
   .user__company-box {
     gap: 10px;
-    margin-left: 79px;
   }
   .icon-logo-company1 {
     width: 100px;
@@ -760,5 +801,115 @@ ul {
   }
   .footer-info__title-subscribe {
     font-size: 10px;
+  }
+  .footer-info__nazva-link {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-info__button {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-info__content-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info__content {
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner {
+    width: 480px;
+    padding: 0px 21px;
+  }
+  .header-console__logo {
+    width: 90px;
+    height: 40px;
+  }
+  .services__title {
+    width: 350px;
+    font-size: 26px;
+  }
+  .achievement__content-box {
+    flex-direction: column;
+  }
+  .achievement__element::before {
+    width: 100%;
+    height: 200px;
+  }
+  .achievement__element-title {
+    font-size: 14px;
+  }
+  .achievement__element-paragraf {
+    font-size: 14px;
+    width: 440px;
+  }
+  .work {
+    display: none;
+  }
+  .team__content-box {
+    width: 435px;
+  }
+  .team__title {
+    font-size: 15px;
+  }
+  .team__info-element {
+    width: 450px;
+    height: 550px;
+  }
+  .team__info-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .team__image {
+    width: 100%;
+    height: 422px;
+  }
+  .team__name {
+    font-size: 12px;
+  }
+  .team__paragraf {
+    font-size: 12px;
+  }
+  .user {
+    padding: 94px;
+  }
+  .user__company-box {
+    display: flex;
+    justify-content: center;
+  }
+  .user__widprawnik {
+    display: flex;
+    gap: 30px;
+  }
+  .user__dodatok {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-logo-company1:before,
+  .icon-logo-company2:before,
+  .icon-logo-company3:before,
+  .icon-logo-company4:before,
+  .icon-logo-company5:before,
+  .icon-logo-company6:before {
+    font-size: 100px;
+  }
+  .footer-info {
+    padding: 240px;
+  }
+  .footer-info__content-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info__subscribe-box {
+    align-items: center;
+  }
+  .footer-info__nazva-link {
+    margin-top: 1px;
+  }
+  .footer-info__button {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
