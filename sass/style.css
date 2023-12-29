@@ -444,7 +444,7 @@ ul {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 70px;
+  gap: 93px;
 }
 
 .footer-info__info-box {
@@ -533,10 +533,22 @@ ul {
   display: flex;
 }
 
+.footer-info__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-in__indoo {
   display: flex;
   justify-content: center;
-  gap: 165px;
+  gap: 70px;
+}
+
+.footer-in__indo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .footer-info__nazva {
@@ -551,19 +563,24 @@ ul {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0px;
-  margin-left: 20px;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 60px;
 }
 
 .footer-info__text-input {
   background-color: #2F303A;
-  padding: 20px;
+}
+
+.footer-info__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 input {
-  padding: 10px 120px;
+  padding: 15px 16px;
+  width: 358px;
   border-radius: 5px;
   background-color: #2F303A;
 }
@@ -573,7 +590,10 @@ input {
   padding: 10px 50px;
   border: 0.1px;
   border-radius: 5px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -680,26 +700,36 @@ input {
   .icon-logo-company6:before {
     font-size: 110px;
   }
+  .footer-info__content-box {
+    gap: 50px;
+  }
+  input {
+    width: 280px;
+  }
 }
 @media screen and (max-width: 768px) {
   .conteiner {
     width: 592px;
   }
-  .header-console__logo {
-    width: 120px;
-    height: 60px;
+  .header-console__section {
+    gap: 40px;
   }
   .header-console__menu {
-    gap: 20px;
+    gap: 30px;
   }
   .header-console__option-link {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  .header-console__content-box {
+    gap: 30px;
   }
   .header-console__information {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
   }
   .header-console__info {
-    font-size: 11px;
+    font-size: 12px;
   }
   .services__button {
     padding: 15px 40px;
@@ -817,6 +847,13 @@ input {
   .footer-info__content {
     display: flex;
   }
+  input {
+    width: 450px;
+  }
+  .footer-info__form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .conteiner {
@@ -911,5 +948,18 @@ input {
   .footer-info__button {
     display: flex;
     justify-content: center;
+  }
+  input {
+    width: 390px;
+  }
+  .footer-in__indoo {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info__info-box {
+    align-items: center;
+  }
+  .footer-info__adress-box {
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

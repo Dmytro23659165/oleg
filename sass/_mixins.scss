@@ -363,7 +363,7 @@ ul{
 .footer-info__content-box {
     @include center($flex: flex, $center: start);
     align-items: center;
-    gap: 70px;
+    gap: 93px;
 }
 .footer-info__info-box {
     @include center($flex: flex, $center: center);
@@ -429,14 +429,20 @@ ul{
 .footer__sun{
     display: flex;
 }
-
+.footer-info__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-in__indoo{
     display: flex;
     justify-content: center;
-    gap: 165px;
+    gap: 70px;
 }
 .footer-in__indo{
-   
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
 }
 
 .footer-info__nazva{
@@ -448,19 +454,23 @@ ul{
     $weight: 700, $line-height: normal, 
     $letter-spacing: 0px);
 
-    margin-left: 20px;
-
     color: $text-color;
     text-transform: uppercase;
-    margin-top: 60px;
 }
 
 .footer-info__text-input{
     background-color: $hew-color;
-    padding: 20px;
+    // padding: 20px;
+}
+.footer-info__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 input{
-    padding: 10px 120px;
+    padding: 15px 16px;
+    width: 358px;
     border-radius: 5px;
     background-color: $hew-color;
 }
@@ -473,7 +483,10 @@ input{
     padding: 10px 50px;
     border: 0.1px;
     border-radius: 5px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
     @include prosto($aligh: center, $family: Roboto, 
     $size: 16px, $style: normal, 
@@ -619,6 +632,17 @@ input{
         font-size: 110px;
     }
     
+
+
+    .footer-info__content-box{
+        gap: 50px;
+    }
+    input{
+        width: 280px;
+    }
+    .footer-info__button-link{
+
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -629,21 +653,28 @@ input{
 
 
 
+    .header-console__section{
+        gap: 40px;
+    }
     .header-console__logo{
-        width: 120px;
-        height: 60px;
+
     }
     .header-console__menu{
-        gap: 20px;
+        gap: 30px;
     }
     .header-console__option-link{
-        font-size: 11px;
+        font-size: 12px;
+    }
+    .header-console__content-box{
+        gap: 30px;
     }
     .header-console__information{
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
     }
     .header-console__info{
-        font-size: 11px;
+        font-size: 12px;
     }
 
     
@@ -796,6 +827,13 @@ input{
     }
     .footer-info__content{
         display: flex;
+    }
+    input{
+        width: 450px;
+    }
+    .footer-info__form{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -950,5 +988,18 @@ input{
     .footer-info__button{
         display: flex;
         justify-content: center;
+    }
+    input{
+        width: 390px;
+    }
+    .footer-in__indoo{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-info__info-box{
+        align-items: center;
+    }
+    .footer-info__adress-box{
+        align-items: center;
     }
 }
